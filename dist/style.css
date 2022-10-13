@@ -106,6 +106,10 @@ table {
   padding: 18px;
 }
 
+.pl-15 {
+  padding: 15;
+}
+
 .hidden {
   display: none;
 }
