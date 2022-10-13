@@ -1,0 +1,1 @@
+(()=>{var s=document.querySelector("#hamburger"),e=document.querySelector("#nav");s.addEventListener("click",function(){e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("hidden"))});})();
