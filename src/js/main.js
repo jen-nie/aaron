@@ -13,24 +13,3 @@ button.addEventListener('click', function() {
         nav.classList.add('hidden');
     }
 })
-/* export function init() {
-    const nav = document.querySelector("#mainnav");
-    const list = nav.querySelector("ul");
-    const button = nav.querySelector("button");
-}
-
-// Toggle area-expanded atrribute
-button.addEventListener('click', e => {
-    if (button.classList.contains('closed')) {
-        button.classList.remove('closed');
-    } else {
-        button.classList.add('closed');
-    }
-})
-
-// Hide list on keydown Escape
-nav.addEventListener('keyup', e => {
-    if (e.code === 'Escape') {
-        button.setAttribute('aria-expanded', false);
-    }
-}) */

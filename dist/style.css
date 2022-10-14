@@ -107,7 +107,11 @@ table {
 }
 
 .pl-15 {
-  padding: 15;
+  padding: 15px;
+}
+
+.p-heading {
+  padding: 50px 15px;
 }
 
 .hidden {
@@ -212,6 +216,10 @@ blockquote, h4 {
   font-weight: 300;
 }
 
+blockquote {
+  margin-bottom: 20px;
+}
+
 button {
   background-color: transparent;
   width: 40px;
@@ -222,6 +230,7 @@ button {
   justify-content: center;
   border: 0;
   outline: none;
+  margin: 10px 0;
 }
 
 button .line {
@@ -237,10 +246,12 @@ button .line:last-child {
 }
 
 .button {
+  display: inline-block;
   border: 1px solid var(--primary);
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 10px 25px;
+  margin: 10px 0;
 }
 
 .section-heading {
@@ -350,6 +361,12 @@ header h2 {
   font-size: 28px;
   font-weight: 300;
   margin-bottom: 25px;
+}
+
+.img-crop {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
 }
 
 #hamburger {
