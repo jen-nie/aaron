@@ -1,3 +1,5 @@
 node_modules
 build.sh
 clean-build.sh
+package-lock.json
+package.json
