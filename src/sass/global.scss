@@ -79,9 +79,8 @@
   justify-content: space-between;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 600px) {
   .mobile-hidden {
-      /*display: none;*/
-      translate: 100%;
+      display: none;
   }
 }

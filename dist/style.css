@@ -176,17 +176,16 @@ table {
   justify-content: space-between;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 600px) {
   .mobile-hidden {
-    /*display: none;*/
-    translate: 100%;
+    display: none;
   }
 }
 :root {
   --primary: #D5874C;
 }
 
-@media (min-width: 0rem) and (max-width: 37.4375rem) {
+@media (max-width: 599px) {
   .super-headline {
     text-transform: uppercase;
     font-size: 16px;
@@ -200,6 +199,7 @@ table {
   */
   html {
     font-family: "Source Sans Pro", sans-serif;
+    min-width: none;
   }
   h2, h3 {
     color: var(--primary);
@@ -306,6 +306,8 @@ table {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
     background-repeat: no-repeat;
     height: 558px;
+    background-color: #000;
+    background-position: center bottom -40px;
   }
   header h1 {
     color: white;
@@ -320,6 +322,30 @@ table {
   header h2 {
     font-size: 38px;
     margin-bottom: 20px;
+  }
+  .header-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex: 1 1 0%;
+  }
+  .header-booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 80px;
+  }
+  nav ul {
+    position: absolute;
+  }
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  img {
+    max-width: 100%;
+    max-height: auto;
   }
   .apply {
     writing-mode: vertical-lr;
@@ -341,9 +367,40 @@ table {
     max-height: 400px;
     overflow: hidden;
   }
+  img {
+    max-height: auto;
+  }
   #hamburger {
     position: relative;
     z-index: 2;
+  }
+  .menu {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 85%;
+    background-color: #363636;
+    padding-top: 70px;
+    padding-right: 15px;
+    transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .menu a {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+  .shown {
+    translate: 0%;
+  }
+  .mobile-hidden {
+    translate: 100%;
   }
   footer {
     background-color: #363636;
@@ -367,59 +424,7 @@ table {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 767px) {
-  header {
-    background-color: #000;
-    background-position: center bottom -40px;
-  }
-  .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    flex: 1 1 0%;
-  }
-  .header-booking {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-bottom: 80px;
-  }
-  .menu {
-    position: fixed;
-    display: flex;
-    z-index: 1;
-    flex-direction: column;
-    align-items: end;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 500px;
-    background-color: #363636;
-    padding-top: 70px;
-    padding-right: 15px;
-    transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .menu a {
-    display: block;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 25px;
-  }
-  nav ul {
-    position: absolute;
-  }
-  .articles {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  img {
-    max-width: 100%;
-    max-height: auto;
-  }
-}
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   header {
     background-color: #000;
     background-position: right -120px bottom -40px;
