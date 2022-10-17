@@ -180,6 +180,7 @@ table {
   --primary: #D5874C;
 }
 
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
 .super-headline {
   text-transform: uppercase;
   font-size: 16px;
@@ -187,7 +188,6 @@ table {
   color: #363636;
   margin-top: 15px;
 }
-
 /* header {
     background-image: url('https://commons.wikimedia.org/wiki/File:Cheng_Tsung_Lung.jpg')
 }
@@ -195,36 +195,29 @@ table {
 html {
   font-family: "Source Sans Pro", sans-serif;
 }
-
 h2, h3 {
   color: var(--primary);
   font-weight: 300;
 }
-
 h3 {
   font-weight: 300;
   font-size: 22px;
   margin-bottom: 10px;
 }
-
 a {
   text-decoration: none;
 }
-
 p {
   color: #fff;
 }
-
 blockquote, h4 {
   color: #fff;
   font-size: 22px;
   font-weight: 300;
 }
-
 blockquote {
   margin-bottom: 20px;
 }
-
 button {
   background-color: transparent;
   width: 40px;
@@ -237,19 +230,16 @@ button {
   outline: none;
   margin: 10px 0;
 }
-
 button .line {
   width: 23px;
   height: 2px;
   margin-bottom: 8px;
   background-color: var(--primary);
 }
-
 button .line:last-child {
   margin-bottom: 0;
   width: 16px;
 }
-
 .button {
   display: inline-block;
   border: 1px solid var(--primary);
@@ -258,18 +248,15 @@ button .line:last-child {
   padding: 10px 25px;
   margin: 10px 0;
 }
-
 .section-heading {
   font-size: 28px;
 }
-
 .level {
   display: flex;
   background-color: #363636;
   position: relative;
   margin-bottom: 100px;
 }
-
 .icon-bg {
   position: absolute;
   left: 50%;
@@ -282,7 +269,6 @@ button .line:last-child {
   border-radius: 100%;
   background-color: #595959;
 }
-
 .number {
   position: absolute;
   left: calc(50% + 38px);
@@ -298,7 +284,6 @@ button .line:last-child {
   font-size: 28px;
   z-index: -1;
 }
-
 header {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
   background-repeat: no-repeat;
@@ -318,7 +303,13 @@ header h2 {
   font-size: 38px;
   margin-bottom: 20px;
 }
-
+  .header-content {
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+    padding-right: 80px;
+    padding-bottom: 80px;
+  }
 .apply {
   writing-mode: vertical-lr;
   color: #1A1A1A;
@@ -327,31 +318,45 @@ header h2 {
   padding: 10px;
   rotate: 180deg;
 }
-
 .items-center {
   justify-content: center;
 }
-
 .levelp {
   line-height: 1.5;
   font-weight: 300;
 }
-
+  .menu {
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    background-color: #363636;
+    padding-top: 70px;
+    padding-right: 15px;
+  }
+  .menu a {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
 .img-crop {
   width: 100%;
   max-height: 400px;
   overflow: hidden;
 }
-
 #hamburger {
   position: relative;
   z-index: 2;
 }
-
 footer {
   background-color: #363636;
 }
-
 #about {
   background-color: #FFF7F2;
 }
@@ -359,7 +364,6 @@ footer {
   line-height: 1.5em;
   color: #363636;
 }
-
 #news {
   padding: 15px;
 }
