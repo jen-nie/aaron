@@ -229,10 +229,6 @@
         translate: 100%;
     }
 
-    footer {
-        background-color: #363636;
-    }
-
     #about {
 
         background-color: #FFF7F2;
@@ -353,6 +349,14 @@
         div:first-child {
             display: flex;
             justify-content: space-between;
+            font-weight: 300;
+            h4 {
+                font-size: 1.2em;
+                margin-bottom: 0.5em;
+            }
+            p {
+                font-size: 0.8em;
+            }
         }
 
         .footer-text {
