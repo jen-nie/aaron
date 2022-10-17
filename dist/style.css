@@ -163,6 +163,11 @@ table {
   display: flex;
 }
 
+.shown {
+  display: flex;
+  translate: 0%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -173,7 +178,8 @@ table {
 
 @media (max-width: 767px) {
   .mobile-hidden {
-    display: none;
+    /*display: none;*/
+    translate: 100%;
   }
 }
 :root {
@@ -235,6 +241,18 @@ table {
     height: 2px;
     margin-bottom: 8px;
     background-color: var(--primary);
+    transition: transform 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotate(0deg);
+  }
+  button .line1 {
+    transform-origin: center left;
+    transform: rotate(45deg);
+  }
+  button .line2 {
+    width: 23px !important;
+    transform: rotate(-45deg);
+    transform-origin: center right;
+    translate: -8px -10px;
   }
   button .line:last-child {
     margin-bottom: 0;
@@ -368,6 +386,7 @@ table {
   }
   .menu {
     position: fixed;
+    display: flex;
     z-index: 1;
     flex-direction: column;
     align-items: end;
@@ -378,6 +397,7 @@ table {
     background-color: #363636;
     padding-top: 70px;
     padding-right: 15px;
+    transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .menu a {
     display: block;

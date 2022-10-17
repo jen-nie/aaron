@@ -66,6 +66,10 @@
 .flex {
   display: flex;
 }
+.shown {
+  display: flex;
+  translate: 0%;
+}
 
 .flex-col {
   flex-direction: column;
@@ -77,6 +81,7 @@
 
 @media (max-width: 767px) {
   .mobile-hidden {
-      display: none;
+      /*display: none;*/
+      translate: 100%;
   }
 }
