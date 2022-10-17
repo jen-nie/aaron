@@ -210,6 +210,13 @@ p {
   text-decoration: none;
 }
 
+.super-headline {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  color: #363636;
+}
+
 footer {
   background-color: #363636;
 }
@@ -225,10 +232,6 @@ footer {
 
 @media (max-width: 599px) {
   .super-headline {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    color: #363636;
     margin-top: 15px;
   }
   /* header {
@@ -501,9 +504,76 @@ footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
   }
+  .p-heading {
+    padding-bottom: 0px;
+  }
   article img {
     max-width: 100%;
     max-height: 240px;
+  }
+  .super-headline {
+    font-size: 1.1em;
+  }
+  .section-heading {
+    font-size: 2.5em;
+  }
+  .level {
+    padding: 0px 1em;
+    margin-bottom: 1em;
+    font-weight: 300;
+  }
+  .level h3 {
+    margin-top: 0px;
+  }
+  .level > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .level .icon-bg {
+    border-radius: 50%;
+    background-color: #595959;
+    padding: 25px;
+    height: fit-content;
+    margin: 0px 1em;
+  }
+  .level .text-info-group {
+    display: inline-block;
+  }
+  .level .blockquote-container {
+    width: 20%;
+  }
+  .level .blockquote-container blockquote {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .level > div {
+    position: relative;
+    background-color: #363636;
+    left: 73px;
+    width: 75%;
+  }
+  .number {
+    position: absolute;
+    left: -73px;
+    font-size: 10em;
+    font-weight: 600;
+    color: #363636;
+    display: inline-block;
+  }
+  .number-first {
+    top: -34px;
+  }
+  .number-last {
+    bottom: -23px;
+  }
+  .apply {
+    position: relative;
+    background-color: #F7F7F7;
+    width: calc(25% - 82px);
+    color: #1A1A1A;
+    padding: 1em;
+    margin-left: 100px;
   }
   footer div:first-child {
     display: flex;
