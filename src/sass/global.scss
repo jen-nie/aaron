@@ -74,3 +74,9 @@
 .justify-between {
   justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+  .mobile-hidden {
+      display: none;
+  }
+}

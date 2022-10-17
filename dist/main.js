@@ -1,1 +1,1 @@
-(()=>{var s=document.querySelector("#hamburger"),e=document.querySelector("#nav");s.addEventListener("click",function(){e.classList.contains("hidden")?(e.classList.remove("hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("hidden"))});})();
+(()=>{var s=document.querySelector("#hamburger"),e=document.querySelector("#nav");s.addEventListener("click",function(){e.classList.contains("mobile-hidden")?(e.classList.remove("mobile-hidden"),e.classList.add("flex")):(e.classList.remove("flex"),e.classList.add("mobile-hidden"))});})();
