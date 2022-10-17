@@ -27,30 +27,6 @@
     }
     */
 
-    html {
-        font-family: "Source Sans Pro", sans-serif;
-        min-width: none;
-    }
-
-    h2, h3 {
-        color: var(--primary);
-        font-weight: 300;
-    }
-
-    h3 {
-        font-weight: 300;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    p {
-        color: #fff;
-    }
-
     blockquote, h4 {
         color: #fff;
         font-size: 22px;
@@ -95,15 +71,6 @@
     button .line:last-child {
         margin-bottom: 0;
         width: 16px;
-    }
-
-    .button {
-        display: inline-block;
-        border: 1px solid var(--primary);
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 10px 25px;
-        margin: 10px 0;
     }
 
 
@@ -172,6 +139,7 @@
         }
     }
     .header-content {
+        padding: 80px 0 0 80px;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         flex: 1 1 0%;
@@ -288,74 +256,29 @@
         }
     }
 }
-// @media (max-width: 767px) {
-//     header {
-//         background-color: #000;
-//         background-position: center bottom -40px;
-//     }
-
-//     .header-content {
-//         display: grid;
-//         grid-template-columns: repeat(2, minmax(0, 1fr));
-//         flex: 1 1 0%;
-//     }
-
-//     .header-booking {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: flex-end;
-//         align-items: flex-start;
-//         padding-bottom: 80px;
-//     }
-
-// .menu {
-//     position: fixed;
-//     display: flex;
-//     z-index: 1;
-//     flex-direction: column;
-//     align-items: end;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     width: 500px;
-//     background-color: #363636;
-//     padding-top: 70px;
-//     padding-right: 15px;
-//     transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-//     a {
-//         display: block;
-//         color: #fff;
-//         font-size: 28px;
-//         font-weight: 300;
-//         margin-bottom: 25px;
-//     }
-// }
-
-//     nav ul {
-//         position: absolute;
-// }
-
-//     .articles {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 15px;
-// }
-
-//     img {
-//         max-width: 100%;
-//         max-height: auto;
-// }
-//   }
 
 @media (min-width: 600px) {
     header {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
+        background-repeat: no-repeat;
+        height: 896px;
         background-color: #000;
-        background-position: right -120px bottom -40px;
+        background-position: right 10vh;
+        background-size: contain;
+        font-size: 1.2em;
+    }
+    header h1 {
+        color: white;
+        padding: 15px;
+        font-weight: 300;
+    }
+    header span {
+        text-transform: uppercase;
     }
 
     header > div:first-child {
         align-items: center;
+        height: 75px;
     }
 
     #hamburger {
@@ -376,11 +299,26 @@
         text-underline-offset: 6px;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 14px;
     }
 
     .header-content {
-        padding: 80px 0 0 80px;
+        padding-left: 80px;
+        display: flex;
+        height: 80%;
+        align-items: center;
+    }
+    .header-booking h2 {
+        color: var(--primary);
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+
+    .header-booking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 80px;
     }
 
     #about {
