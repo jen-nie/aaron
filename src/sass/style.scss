@@ -356,10 +356,15 @@
         font-size: 3.5em;
     }
     .level {
+        grid-template-columns: auto 19%;
+        display: grid !important;
         padding: 0px 1em;
-        margin-bottom: 1em;
         font-weight: 300;
+        min-height: 280px;
+        gap: 2em;
+        margin-bottom: 2em;
         h3 {
+            font-size: 1.7em;
             margin-top: 0px;
         }
         > div {
@@ -368,50 +373,70 @@
             align-items: center;
         }
         .icon-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 50%;
             background-color: #595959;
             padding: 25px;
-            height: fit-content;
             margin: 0px 1em;
+            grid-column-start: 3;
+            grid-row-start: 1;
+            width: 180px;
+            height: 180px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
         }
         .text-info-group {
             display: inline-block;
+            grid-column-end: span 2;
+            padding-left: 1em;
+            p {
+                font-weight: 300;
+                font-size: 1.1em;
+                line-height: 1.5em;
+                width: 85%;
+            }
         }
         .blockquote-container {
-            width: 20%;
             blockquote {
                 color: #fff;
-                font-size: 1.2em;
+                font-size: 1.7em;
             }
         }
     }
     .level > div {
         position: relative;
         background-color: #363636;
-        left: 73px;
-        width: 75%;
+        left: 100px;
+        width: calc(100% - 100px);
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
     }
     .number {
         position: absolute;
-        left: -73px;
-        font-size: 10em;
+        left: -87px;
+        font-size: 12em;
         font-weight: 600;
         color: #363636;
         display: inline-block;
     }
     .number-first {
-        top: -34px;
+        top: -42px;
     }
     .number-last {
-        bottom: -23px;
+        bottom: -28px;
     }
     .apply {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
         background-color: #F7F7F7;
-        width: calc(100% - 75% - 82px);
         color: #1A1A1A;
         padding: 1em;
-        margin-left: 100px;
     }
     section#about > div,
     div.articles > article {
