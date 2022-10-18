@@ -319,6 +319,9 @@
         align-items: flex-start;
         padding-bottom: 80px;
     }
+    .button {
+        font-size: 1.2em;
+    }
 
     #about {
         padding: 75px 15px;
@@ -327,6 +330,9 @@
     #about > div:first-child {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        gap: 20px;
+        padding-left: 30px;
     }
 
     .articles {
@@ -347,7 +353,7 @@
         font-size: 1.1em;
     }
     .section-heading {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
     .level {
         padding: 0px 1em;
@@ -406,6 +412,58 @@
         color: #1A1A1A;
         padding: 1em;
         margin-left: 100px;
+    }
+    section#about > div,
+    div.articles > article {
+        background-color: #FFF7F2;
+    }
+    section#about {
+        > div {
+            padding: 8em 0;
+        }
+        div.img-crop {
+            width: 100%;
+            img {
+                width: inherit;
+            }
+        }
+        div.img-crop ~ div.p-15 {
+            width: 70%;
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+    div.img-crop ~ div.p-15 {
+        p {
+            color: #363636;
+            font-weight: 300;
+            font-size: 1.2em;
+            line-height: 1.7em;
+        }
+    }
+    section#news {
+        padding: 3em 1em 6em 1em;
+        div.img-crop {
+            overflow-y: hidden;
+            max-height: 340px;
+            img {
+                max-height: none;
+            }
+        }
+        div.img-crop ~ div.p-15 {
+            width: 100%;
+            padding: 1.5em;
+            p {
+                font-size: 1em;
+                margin-bottom: 1em;
+            }
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
     }
     footer {
         div:first-child {
