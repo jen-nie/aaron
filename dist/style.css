@@ -605,6 +605,12 @@ footer {
   .order2 .text-info-group {
     grid-column-start: 3;
   }
+  .order2 + .apply {
+    position: absolute;
+    right: 0.5em;
+    width: 18.5%;
+    height: 580px;
+  }
   .order3 .icon-bg {
     grid-column-start: 1;
   }
