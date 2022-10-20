@@ -258,7 +258,7 @@ footer {
     border: 0;
     outline: none;
     margin: 10px 0;
-
+    padding: 15px;
   }
   button .line {
     width: 23px;
@@ -305,7 +305,7 @@ footer {
   }
   .number {
     position: absolute;
-    left: calc(56.5%);
+    left: calc(50% + 38px);
     top: -67px;
     background-color: #D5D5D5;
     height: 38px;
@@ -364,7 +364,6 @@ footer {
     max-width: 100%;
     max-height: auto;
   }
-
   .apply {
     writing-mode: vertical-lr;
     color: #1A1A1A;
@@ -426,7 +425,6 @@ footer {
     padding-top: 50px;
     padding-bottom: 20px;
   }
-  
   #about p {
     line-height: 1.5em;
     color: #363636;
