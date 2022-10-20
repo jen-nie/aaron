@@ -7,7 +7,7 @@ html {
 }
 
 h2, h3 {
-  color: var(--primary);
+  color: $primary;
   font-weight: 300;
 }
 
@@ -22,11 +22,11 @@ a {
 }
 
 p {
-  color: #fff;
+  color: $white;
 }
 
 .primary {
-  color: #D5874C;
+  color: $primary;
 }
 .p-15 {
   padding: 18px;
@@ -73,11 +73,28 @@ p {
 }
 
 .text-white {
-    color: #fff;
+    color: $white;
 }
 
 .text-black {
-    color: #000;
+    color: $black;
+}
+header {
+  h1 {
+      span {
+          font-weight: 600;
+      }
+  }
+}
+.img-crop {
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .grid {
@@ -103,7 +120,7 @@ p {
 
 .button {
   display: inline-block;
-  border: 1px solid var(--primary);
+  border: 1px solid $primary;
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 20px;
@@ -115,13 +132,10 @@ p {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  color: #363636;
+  color: $dark-gray;
 }
-footer {
-  background-color: #363636;
-}
-@media (min-width: 600px) {
-  .mobile-hidden {
-      display: none;
+@include breakpoint($desktop) {
+  .button {
+    padding: 14px 27px;
   }
 }

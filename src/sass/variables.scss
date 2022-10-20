@@ -3,14 +3,24 @@ $max-width: 1920;
 
 
 // BREAKPOINTS
-$mobile: 599;
+$mobile: 1159;
 $desktop: $mobile + 1;
 
 
 // COLORS
 // $copy: ;
 // $bgcolor: ;
-$bggray: hsl(207, 8%, 22%);
-$primary: red;
+$light-gray: hsl(0, 0%, 84%);
+$bggray: 	hsl(0, 0%, 35%);
+$dark-gray: hsl(0, 0%, 21%);
 
+$bglight-primary: hsl(23, 100%, 97%);
+$primary: hsl(26, 63%, 57%);
 
+$white: hsl(0, 0%, 100%);
+$muddy-white: hsl(0, 0%, 97%);
+$black: hsl(0, 0%, 0%);
+
+$mobile-padding: 5px;
+$desktop-padding: 36px;
+$text-size: 1.1em;

@@ -104,7 +104,7 @@ html {
 }
 
 h2, h3 {
-  color: var(--primary);
+  color: hsl(26deg, 63%, 57%);
   font-weight: 300;
 }
 
@@ -119,11 +119,11 @@ a {
 }
 
 p {
-  color: #fff;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .primary {
-  color: #D5874C;
+  color: hsl(26deg, 63%, 57%);
 }
 
 .p-15 {
@@ -171,11 +171,26 @@ p {
 }
 
 .text-white {
-  color: #fff;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .text-black {
-  color: #000;
+  color: hsl(0deg, 0%, 0%);
+}
+
+header h1 span {
+  font-weight: 600;
+}
+
+.img-crop {
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .grid {
@@ -202,7 +217,7 @@ p {
 
 .button {
   display: inline-block;
-  border: 1px solid var(--primary);
+  border: 1px solid hsl(26deg, 63%, 57%);
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 20px;
@@ -215,83 +230,117 @@ p {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  color: #363636;
+  color: hsl(0deg, 0%, 21%);
 }
 
-footer {
-  background-color: #363636;
-}
-
-@media (min-width: 600px) {
-  .mobile-hidden {
-    display: none;
+@media (min-width: 72.5rem) {
+  .button {
+    padding: 14px 27px;
   }
 }
-:root {
-  --primary: #D5874C;
+@media (min-width: 0rem) and (max-width: 72.4375rem) {
+  .menu {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 85%;
+    background-color: hsl(0deg, 0%, 21%);
+    padding-top: 70px;
+    padding-right: 15px;
+    transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .menu a {
+    display: block;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
 }
-
-header h1 span {
-  font-weight: 600;
+@media (min-width: 72.5rem) {
+  header {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
+    background-repeat: no-repeat;
+    height: 896px;
+    background-color: hsl(0deg, 0%, 0%);
+    background-position: right 10vh;
+    background-size: contain;
+    font-size: 1.2em;
+    padding: 0 36px;
+  }
+  header h1 {
+    color: white;
+    padding: 15px 0;
+    font-weight: 300;
+  }
+  header span {
+    text-transform: uppercase;
+  }
+  header .header-booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 80px;
+  }
+  header .button {
+    padding: 20px 30px;
+  }
+  header h2 {
+    color: hsl(26deg, 63%, 57%);
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  header > div:first-child {
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .menu {
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 15px;
+  }
+  nav ul li a {
+    color: hsl(26deg, 63%, 57%);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .header-content {
+    padding-left: 80px;
+    display: flex;
+    height: 80%;
+    align-items: center;
+  }
+  .button {
+    font-size: 1.2em;
+  }
 }
-
-@media (max-width: 1159px) {
+@media (min-width: 0rem) and (max-width: 72.4375rem) {
   .super-headline {
     margin-top: 15px;
   }
-  /* header {
-      background-image: url('https://commons.wikimedia.org/wiki/File:Cheng_Tsung_Lung.jpg')
-  }
-  */
   blockquote, h4 {
-    color: #fff;
+    color: hsl(0deg, 0%, 100%);
     font-size: 22px;
     font-weight: 300;
   }
   blockquote {
     margin-bottom: 20px;
   }
-  button {
-    background-color: transparent;
-    width: 25px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    border: 0;
-    outline: none;
-    margin: 10px 0;
-    padding: 15px;
-  }
-  button .line {
-    width: 23px;
-    height: 2px;
-    margin-bottom: 8px;
-    background-color: var(--primary);
-    transition: transform 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: rotate(0deg);
-  }
-  button .line1 {
-    transform-origin: center left;
-    transform: rotate(45deg);
-  }
-  button .line2 {
-    width: 23px !important;
-    transform: rotate(-45deg);
-    transform-origin: center right;
-    translate: -8px -10px;
-  }
-  button .line:last-child {
-    margin-bottom: 0;
-    width: 16px;
-  }
   .section-heading {
     font-size: 28px;
   }
   .level {
     display: flex;
-    background-color: #363636;
+    background-color: hsl(0deg, 0%, 21%);
     position: relative;
     margin-bottom: 100px;
   }
@@ -305,7 +354,7 @@ header h1 span {
     display: grid;
     place-items: center;
     border-radius: 100%;
-    background-color: #595959;
+    background-color: hsl(0deg, 0%, 35%);
   }
   .icon-bg img {
     width: 75px;
@@ -314,13 +363,13 @@ header h1 span {
     position: absolute;
     left: calc(50% + 38px);
     top: -67px;
-    background-color: #D5D5D5;
+    background-color: hsl(0deg, 0%, 84%);
     height: 38px;
     width: 38px;
     display: grid;
     place-items: center;
     border-radius: 100%;
-    color: var(--primary);
+    color: hsl(26deg, 63%, 57%);
     font-weight: 600;
     font-size: 28px;
     z-index: -1;
@@ -329,7 +378,7 @@ header h1 span {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
     background-repeat: no-repeat;
     height: 558px;
-    background-color: #000;
+    background-color: hsl(0deg, 0%, 0%);
     background-position: center bottom -40px;
   }
   header h1 {
@@ -374,8 +423,8 @@ header h1 span {
   }
   .apply {
     writing-mode: vertical-lr;
-    color: #1A1A1A;
-    background-color: #F7F7F7;
+    color: hsl(0deg, 0%, 0%);
+    background-color: hsl(0deg, 0%, 97%);
     font-size: 18px;
     padding: 10px;
     rotate: 180deg;
@@ -387,149 +436,13 @@ header h1 span {
     line-height: 1.5;
     font-weight: 300;
   }
-  .img-crop {
-    width: 100%;
-    overflow: hidden;
-  }
-  #hamburger {
-    position: relative;
-    right: 5px;
-    z-index: 2;
-  }
-  .menu {
-    position: fixed;
-    display: flex;
-    z-index: 1;
-    flex-direction: column;
-    align-items: end;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 85%;
-    background-color: #363636;
-    padding-top: 70px;
-    padding-right: 15px;
-    transition: translate 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .menu a {
-    display: block;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 25px;
-  }
-  .shown {
-    translate: 0%;
-  }
-  .mobile-hidden {
-    translate: 100%;
-  }
-  img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-  }
-  #about {
-    background-color: #FFF7F2;
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-  #about p {
-    line-height: 1.5em;
-    color: #363636;
-  }
-  #news {
-    padding: 15px;
-  }
-  #news article {
-    background-color: #F7F7F7;
-  }
-  #news article p {
-    line-height: 1.9;
-    color: #363636;
-    margin-bottom: 20px;
-  }
 }
-@media (min-width: 1160px) {
-  header {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/800px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg?20191112041104");
-    background-repeat: no-repeat;
-    height: 896px;
-    background-color: #000;
-    background-position: right 10vh;
-    background-size: contain;
-    font-size: 1.2em;
-  }
-  header h1 {
-    color: white;
-    padding: 15px;
-    font-weight: 300;
-  }
-  header span {
-    text-transform: uppercase;
-  }
-  header > div:first-child {
-    align-items: center;
-    padding: 20px 15px;
-  }
-  #hamburger {
-    display: none;
-  }
-  .menu {
-    display: flex;
-  }
-  nav ul li {
-    margin-right: 15px;
-  }
-  nav ul li a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .header-content {
-    padding-left: 80px;
-    display: flex;
-    height: 80%;
-    align-items: center;
-  }
-  .header-booking h2 {
-    color: var(--primary);
-    font-size: 2.5em;
-    margin-bottom: 1em;
-  }
-  .header-booking {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 80px;
-  }
-  .button {
-    font-size: 1.2em;
-  }
-  #about {
-    padding: 75px 15px;
-  }
-  #about > div:first-child {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: center;
-    gap: 20px;
-    padding-left: 30px;
-  }
-  .articles {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 15px;
+@media (min-width: 72.5rem) {
+  #workshops {
+    padding: 0 36px;
   }
   .p-heading {
-    padding-bottom: 0px;
-  }
-  article img {
-    max-width: 100%;
-    max-height: 240px;
+    padding: 50px 0px 0px 0px;
   }
   .super-headline {
     font-size: 1.1em;
@@ -554,7 +467,7 @@ header h1 span {
     align-items: center;
     grid-auto-flow: column;
     position: relative;
-    background-color: #363636;
+    background-color: hsl(0deg, 0%, 21%);
     left: 100px;
     width: calc(100% - 100px);
     display: grid;
@@ -565,7 +478,7 @@ header h1 span {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #595959;
+    background-color: hsl(0deg, 0%, 35%);
     padding: 25px;
     margin: 0px 1em;
     grid-column-start: 3;
@@ -602,7 +515,7 @@ header h1 span {
     margin: -1em;
   }
   .level .blockquote-container blockquote {
-    color: #fff;
+    color: hsl(0deg, 0%, 100%);
     font-size: 1.7em;
     text-align: left;
   }
@@ -621,9 +534,9 @@ header h1 span {
   }
   .order2 + .apply {
     position: absolute;
-    right: 0.5em;
-    width: 18.5%;
-    height: 580px;
+    right: 50px;
+    width: 17.7%;
+    height: 593px;
   }
   .order3 .icon-bg {
     grid-column-start: 1;
@@ -640,7 +553,7 @@ header h1 span {
     left: -87px;
     font-size: 12em;
     font-weight: 600;
-    color: #363636;
+    color: hsl(0deg, 0%, 21%);
     display: inline-block;
   }
   .number-first {
@@ -654,16 +567,28 @@ header h1 span {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    background-color: #F7F7F7;
-    color: #1A1A1A;
+    background-color: hsl(0deg, 0%, 97%);
+    color: hsl(0deg, 0%, 0%);
     padding: 1em;
   }
-  section#about > div,
-div.articles > article {
-    background-color: #FFF7F2;
+}
+@media (min-width: 0rem) and (max-width: 72.4375rem) {
+  #about {
+    background-color: hsl(23deg, 100%, 97%);
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  #about p {
+    line-height: 1.5em;
+    color: hsl(0deg, 0%, 21%);
+  }
+}
+@media (min-width: 72.5rem) {
+  section#about {
+    padding: 75px 0;
   }
   section#about > div {
-    padding: 8em 0;
+    padding: 8em 36px;
   }
   section#about div.img-crop {
     width: 100%;
@@ -680,17 +605,51 @@ div.articles > article {
   section#about div.img-crop ~ div.p-15 p {
     font-size: 1.2em;
   }
+  #about > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 20px;
+  }
+  section#about > div,
+div.articles > article {
+    background-color: hsl(23deg, 100%, 97%);
+  }
   div.img-crop ~ div.p-15 p {
-    color: #363636;
+    color: hsl(0deg, 0%, 21%);
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.7em;
   }
   div.img-crop ~ div.p-15 p.super-headline {
     font-weight: 600;
   }
+}
+@media (min-width: 0rem) and (max-width: 72.4375rem) {
+  #news {
+    padding: 15px;
+  }
+  #news article {
+    background-color: hsl(0deg, 0%, 97%);
+  }
+  #news article p {
+    line-height: 1.9;
+    color: hsl(0deg, 0%, 21%);
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 72.5rem) {
+  article img {
+    max-width: 100%;
+    max-height: 240px;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+  }
   section#news {
-    padding: 3em 1em 6em 1em;
+    padding: 3em 36px 6em 36px;
   }
   section#news div.img-crop {
     overflow-y: hidden;
@@ -706,7 +665,7 @@ div.articles > article {
     padding: 1.5em;
   }
   section#news div.img-crop ~ div.p-15 p {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 1em;
   }
   section#news h3 {
@@ -717,7 +676,73 @@ div.articles > article {
     white-space: nowrap;
     overflow: hidden;
   }
+}
+@media (min-width: 0rem) and (max-width: 72.4375rem) {
+  #hamburger {
+    position: relative;
+    right: 5px;
+    z-index: 2;
+  }
+  button {
+    background-color: transparent;
+    width: 25px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border: 0;
+    outline: none;
+    margin: 10px 0;
+    padding: 15px;
+  }
+  button .line {
+    width: 23px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: hsl(26deg, 63%, 57%);
+    transition: transform 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: rotate(0deg);
+  }
+  button .line1 {
+    transform-origin: center left;
+    transform: rotate(45deg);
+  }
+  button .line2 {
+    width: 23px !important;
+    transform: rotate(-45deg);
+    transform-origin: center right;
+    translate: -8px -10px;
+    margin-bottom: 9px;
+  }
+  button .line:last-child {
+    margin-bottom: 0;
+    width: 16px;
+  }
+  .shown {
+    translate: 0%;
+  }
+  .mobile-hidden {
+    translate: 100%;
+    display: none;
+  }
+}
+@media (min-width: 72.5rem) {
+  #hamburger {
+    display: none;
+  }
+}
+footer {
+  background-color: hsl(0deg, 0%, 21%);
+}
+
+@media (min-width: 72.5rem) {
+  footer {
+    padding: 0 36px;
+  }
   footer div:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
     display: flex;
     justify-content: space-between;
     font-weight: 300;
