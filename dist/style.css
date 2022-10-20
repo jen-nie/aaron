@@ -204,7 +204,7 @@ p {
   display: inline-block;
   border: 1px solid var(--primary);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   padding: 10px 20px;
   margin: 15px 0;
   margin-top: 0;
@@ -229,6 +229,10 @@ footer {
 }
 :root {
   --primary: #D5874C;
+}
+
+header h1 span {
+  font-weight: 600;
 }
 
 @media (max-width: 1159px) {
@@ -303,6 +307,9 @@ footer {
     border-radius: 100%;
     background-color: #595959;
   }
+  .icon-bg img {
+    width: 75px;
+  }
   .number {
     position: absolute;
     left: calc(50% + 38px);
@@ -333,7 +340,6 @@ footer {
   header h1 span {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
   }
   header h2 {
     font-size: 38px;
@@ -362,7 +368,9 @@ footer {
   }
   img {
     max-width: 100%;
-    max-height: auto;
+  }
+  img.quote {
+    width: 75px;
   }
   .apply {
     writing-mode: vertical-lr;
@@ -381,11 +389,7 @@ footer {
   }
   .img-crop {
     width: 100%;
-    max-height: 400px;
     overflow: hidden;
-  }
-  img {
-    max-height: auto;
   }
   #hamburger {
     position: relative;
@@ -419,6 +423,11 @@ footer {
   }
   .mobile-hidden {
     translate: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
   }
   #about {
     background-color: #FFF7F2;
@@ -461,7 +470,7 @@ footer {
   }
   header > div:first-child {
     align-items: center;
-    height: 75px;
+    padding: 20px 15px;
   }
   #hamburger {
     display: none;
@@ -658,9 +667,12 @@ div.articles > article {
   }
   section#about div.img-crop {
     width: 100%;
+    height: 100%;
   }
   section#about div.img-crop img {
     width: inherit;
+    object-fit: cover;
+    height: 100%;
   }
   section#about div.img-crop ~ div.p-15 {
     width: 70%;
@@ -674,6 +686,9 @@ div.articles > article {
     font-size: 1.2em;
     line-height: 1.7em;
   }
+  div.img-crop ~ div.p-15 p.super-headline {
+    font-weight: 600;
+  }
   section#news {
     padding: 3em 1em 6em 1em;
   }
@@ -682,7 +697,9 @@ div.articles > article {
     max-height: 340px;
   }
   section#news div.img-crop img {
-    max-height: none;
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
   }
   section#news div.img-crop ~ div.p-15 {
     width: 100%;
@@ -696,6 +713,9 @@ div.articles > article {
     font-size: 2em;
     font-weight: 300;
     margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   footer div:first-child {
     display: flex;
@@ -703,11 +723,11 @@ div.articles > article {
     font-weight: 300;
   }
   footer div:first-child h4 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    margin-bottom: 0.25em;
   }
   footer div:first-child p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   footer .footer-text {
     display: flex;
