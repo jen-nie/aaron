@@ -36,7 +36,7 @@
 
     button {
         background-color: transparent;
-        width: 40px;
+        width: 25px;
         height: 40px;
         display: flex;
         flex-direction: column;
@@ -45,6 +45,7 @@
         border: 0;
         outline: none;
         margin: 10px 0;
+        padding: 15px;
     }
 
     button {
@@ -99,8 +100,8 @@
 
     .number {
         position: absolute;
-        left: calc(50% + 38px);
-        top: -77px;
+        left: calc(56.5%);
+        top: -67px;
         background-color: #D5D5D5;
         height: 38px;
         width: 38px;
@@ -164,6 +165,7 @@
         max-width: 100%;
         max-height: auto;
     }
+    
     .apply {
         writing-mode: vertical-lr;
         color: #1A1A1A;
@@ -194,6 +196,7 @@
 
     #hamburger {
         position: relative;
+        right: 5px;
         z-index: 2;
     }
     .menu {
@@ -229,6 +232,8 @@
     #about {
 
         background-color: #FFF7F2;
+            padding-top: 50px;
+            padding-bottom: 20px;
 
         p {
             line-height: 1.5em;

@@ -204,9 +204,10 @@ p {
   display: inline-block;
   border: 1px solid var(--primary);
   text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px 25px;
-  margin: 10px 0;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 15px 0;
+  margin-top: 0;
   text-decoration: none;
 }
 
@@ -248,7 +249,7 @@ footer {
   }
   button {
     background-color: transparent;
-    width: 40px;
+    width: 25px;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -257,6 +258,7 @@ footer {
     border: 0;
     outline: none;
     margin: 10px 0;
+
   }
   button .line {
     width: 23px;
@@ -303,8 +305,8 @@ footer {
   }
   .number {
     position: absolute;
-    left: calc(50% + 38px);
-    top: -77px;
+    left: calc(56.5%);
+    top: -67px;
     background-color: #D5D5D5;
     height: 38px;
     width: 38px;
@@ -362,6 +364,7 @@ footer {
     max-width: 100%;
     max-height: auto;
   }
+
   .apply {
     writing-mode: vertical-lr;
     color: #1A1A1A;
@@ -387,6 +390,7 @@ footer {
   }
   #hamburger {
     position: relative;
+    right: 5px;
     z-index: 2;
   }
   .menu {
@@ -419,7 +423,10 @@ footer {
   }
   #about {
     background-color: #FFF7F2;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
+  
   #about p {
     line-height: 1.5em;
     color: #363636;

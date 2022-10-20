@@ -105,9 +105,10 @@ p {
   display: inline-block;
   border: 1px solid var(--primary);
   text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px 25px;
-  margin: 10px 0;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 15px 0;
+  margin-top: 0;
   text-decoration: none;
 }
 .super-headline {
