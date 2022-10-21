@@ -25,6 +25,7 @@
                 width: inherit;
                 object-fit: cover;
                 height: 100%;
+                max-height: unset;
             }
         }
         div.img-crop ~ div.p-15 {
