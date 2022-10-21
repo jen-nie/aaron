@@ -344,6 +344,9 @@ img {
     position: relative;
     margin-bottom: 100px;
   }
+  .level > div {
+    width: 100%;
+  }
   .icon-bg {
     position: absolute;
     left: 50%;

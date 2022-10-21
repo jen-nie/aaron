@@ -22,6 +22,9 @@
         background-color: $dark-gray;
         position: relative;
         margin-bottom: 100px;
+        > div {
+            width: 100%;
+        }
     }
 
     .icon-bg {
