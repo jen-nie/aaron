@@ -34,9 +34,8 @@
         }
         .line2 {
             width: 23px !important;
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) translate(2px, -12px);
             transform-origin: center right;
-            translate: -8px -10px;
             margin-bottom: 9px;
         }
         .line:last-child {
@@ -45,10 +44,10 @@
         }
     }
     .shown {
-        translate: 0%;
+        transform: translate(0%);
     }
     .mobile-hidden {
-        translate: 100%;
+        transform: translate(100%);
         display: none;
     }
 }
